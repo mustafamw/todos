@@ -4,6 +4,6 @@ export const environment: Environment = {
   production: false,
   api: {
     domain: 'http://localhost:3000',
-    path: '/api/v1/todos'
+    path: '/api/v1'
   }
 };
