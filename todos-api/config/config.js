@@ -18,7 +18,7 @@ const configs = {
         'application': {
             'name': 'todos',
             'domain': 'hushtech.co.uk',
-            'port': 80
+            'port': 3000
         },
         'mongodb': {
             'url': 'mongodb://localhost:27017/todos'
