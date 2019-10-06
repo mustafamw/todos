@@ -1,0 +1,111 @@
+@import '../../../../scss/global/global.scss';
+
+li.td-todos-item{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid $GREY-A;
+    background: $GREY-B;
+    
+    &.completed{
+        .checkbox{
+            .circle {
+                background: $TODOS-COMPLETED;
+            }
+            .circle::before {
+                position: relative;
+                top: -1px;
+                left: 2px;
+                font-family: FontAwesome;
+                content: "\f00c";
+                color: white;
+                font-size: 15px;
+                @include respond-to(xs) {
+                    font-size: 7px;
+                    top: -7px;
+                }
+            }
+        }
+        .checkbox:hover {
+            .circle {
+                opacity: 0.2;
+                background: $TODOS-UNCOMPLETED;
+            }
+            .circle::before {
+                content: "";
+            }
+        }
+        .subject{
+            text-decoration: line-through;
+        }
+    }
+    
+    .checkbox{
+        cursor: pointer;
+        border: none;
+        margin-right: 5px;
+        border: none;
+        .circle {
+            height: 20px;
+            width: 20px;
+            background: $TODOS-UNCOMPLETED;
+            border: 2px solid $CHECK-CIRCLE-BORDER-COLOR;
+            border-radius: 50px;
+            border: none;
+            @include respond-to(xs) {
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+
+    .checkbox:hover {
+        .circle {
+            opacity: 0.2;
+            background: $TODOS-COMPLETED;
+        }
+        .circle::before {
+            position: relative;
+            top: -1px;
+            left: 2px;
+            font-family: FontAwesome;
+            content: "\f00c";
+            color: white;
+            font-size: 15px;
+            @include respond-to(xs) {
+                font-size: 7px;
+                top: -7px;
+            }
+        }
+    }
+
+    .subject{
+        width: 100%;
+        word-break: break-all;
+        font-weight: bold;
+    }
+
+    .features{
+        margin-left: 5px;
+        @include respond-to(xs) {
+        }
+        .fa{
+            cursor: pointer;
+            border: none;
+        }
+        .fa-trash{
+            color: $RED-A;
+        }
+        .fa-pencil-square-o{
+            position: relative;
+            top: 2px;
+            margin-right: 2px;
+            color: $BLUE-B;
+            @include respond-to(xs) {
+                top: 1px;
+            }
+        }
+    }
+}

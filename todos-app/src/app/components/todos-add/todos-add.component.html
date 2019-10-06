@@ -1,0 +1,14 @@
+<div class="td-input-container">
+  <input type="text"
+  min="{{validation.subject.minLength}}"
+  max="{{validation.subject.maxLength}}"
+  (focus)="inputFocus()"
+  (blur)="inputBlur()"
+  [(ngModel)]="todos.subject" 
+  placeholder="What needs to be done?"/>
+  <button (click)="add()" class="button blue-a">
+    <span class="td-show-text">Add</span>
+    <span class="td-show-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+  </button>
+  <span class="td-error-info" *ngIf="valid === false">Character minimum: {{validation.subject.minLength}} & maximum: {{validation.subject.maxLength}}</span>
+</div>

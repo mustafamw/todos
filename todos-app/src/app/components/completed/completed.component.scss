@@ -1,0 +1,26 @@
+@import '../../../scss/global/global.scss';
+
+.td-task-completed{
+    display: flex;
+    position: sticky;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    top: 0px;
+    z-index: 1;
+    .td-info{
+        width: 33.333%;
+        padding: 15px;
+        &.td-all{
+            background: $TODOS-NOT-COMPLETED;
+        }
+        &.td-done{
+            background: $TODOS-COMPLETED;
+            color: white;
+        }
+        &.td-undone{
+            background: $TODOS-UNCOMPLETED;
+            color: white;
+        }
+    }
+}

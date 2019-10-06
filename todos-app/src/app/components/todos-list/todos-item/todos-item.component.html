@@ -1,0 +1,14 @@
+<li class="td-todos-item" [ngClass]="{'completed': todos.completed}">
+  <div class="td-display-flex">
+    <div class="checkbox" (click)="complete()">
+      <div class="circle">
+      </div>
+    </div>
+    <div class="subject">
+      {{todos.subject}}
+    </div>
+    <div class="features">
+      <i class="fa fa-trash" aria-hidden="true" (click)="delete($event)"></i>
+    </div>
+  </div>
+</li>

@@ -1,0 +1,13 @@
+@import './global/global.scss';
+
+body {
+    background: $BG-COLOR;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: $FONT-FAMILY;
+    font-size: $BODY-FONT-SIZE;
+    @include respond-to(xs) {
+        font-size: $BODY-FONT-SIZE-MOBILE;
+    }
+}

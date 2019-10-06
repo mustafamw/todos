@@ -1,0 +1,37 @@
+@import '../../../scss/global/global.scss';
+
+.td-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    input {
+        border: none;
+        padding: 10px;
+        width: calc(100% - 240px);
+        background: #ffffff;
+        border: 1px solid $BLUE-B;
+        margin-right: -2px;
+        @include respond-to(xs) {
+            width: calc(100% - 65px);
+            padding: 10px !important;
+        }
+    }
+    .td-error-info{
+        display: block;
+        color: red;
+        width: 100%;
+        padding: 5px;
+    }
+    .td-show-text{
+        display: block;
+        @include respond-to(xs) {
+            display: none;
+        } 
+    }
+    .td-show-icon{
+        display: none;
+        @include respond-to(xs) {
+            display: block;
+        }
+    }
+}

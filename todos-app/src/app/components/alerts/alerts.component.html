@@ -1,0 +1,14 @@
+<div class="td-alerts">
+  <ul>
+    <li *ngFor="let alert of alerts; let i = index;" class="td-alerts-item {{alert.type}}">
+      <div class="td-display-flex">
+        <div class="td-icon" (click)="remove($event, i)">
+          <i class="fa fa-times-circle"></i>
+        </div>
+        <div>
+          {{alert.message}}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="container-item">
+    <app-alerts></app-alerts>
+    <app-completed [completedTask]="completedTask"></app-completed>
+    <h1>Todos</h1>
+    <app-todos-add (todosAdded)="todosAdd($event)"></app-todos-add>
+    <div class="loading" [hidden]="loaded">
+      <img src="../../../assets/img/gif/loading.gif" alt="Loading..." title="Loading..."/>
+      <strong>Loading ...</strong>
+    </div>
+    <app-todos-list [todosList]="todosList" (todosUpdate)="todosUpdated($event)" *ngIf="todosList.length > 0"></app-todos-list>
+    <div *ngIf="todosList.length > 1">
+      <button class="button td-delete-button red-a" (click)="deleteAll($event)">Delete All Task</button>
+    </div>
+  </div>
+</div>

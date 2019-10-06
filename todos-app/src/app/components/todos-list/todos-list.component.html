@@ -1,0 +1,3 @@
+<ul>
+  <app-todos-item *ngFor="let todos of todosList; let i = index" [todos]="todos" [index]="i" (todosUpdate)="todosUpdated($event)"></app-todos-item>
+</ul>

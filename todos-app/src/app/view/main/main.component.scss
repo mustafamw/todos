@@ -1,0 +1,23 @@
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.loading{
+    img{
+        width: 60px;
+        clear: both;
+    }
+    strong{
+        display: block;
+        clear: both;
+        margin-top: -10px;
+    }
+    text-align: center;
+}
+
+.td-delete-button{
+    width: 100%;
+}

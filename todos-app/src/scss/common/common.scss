@@ -1,0 +1,14 @@
+input, 
+select, 
+textarea, 
+button{
+    font-family: $FONT-FAMILY;
+}
+
+.td-display-flex{
+    display: flex;
+}
+
+*:focus {
+    outline: none;
+}

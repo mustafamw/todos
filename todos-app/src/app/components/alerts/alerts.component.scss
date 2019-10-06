@@ -1,0 +1,29 @@
+@import '../../../scss/global/global.scss';
+
+.td-alerts{
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    min-width: 320px;
+    max-width: 600px;
+    margin: auto;
+    .td-alerts-item{
+        box-shadow: 2px 2px 4px black;
+        margin-bottom: 10px;
+        color: white;
+        padding: 20px;
+        &.warn{
+            background: $RED-B;
+        }
+        .td-icon{
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+}
