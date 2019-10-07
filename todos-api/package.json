@@ -6,10 +6,7 @@
   "scripts": {
     "start": "npm install && cross-env NODE_ENV=development nodemon --exec babel-node index.js",
     "start-prod": "npm install && cross-env NODE_ENV=production \"./node_modules/.bin/babel-node\" \"./index.js\"",
-    "start-docker": "npm install && cross-env NODE_ENV=docker \"./node_modules/.bin/babel-node\" \"./index.js\"",
-    "debug": "nodemon --exec babel-node --inspect \"./index.js\"",
-    "test": "babel-node \"spec/specs.js\"",
-    "test-cover": "istanbul cover jasmine --require babel-node \"spec/run.js\""
+    "debug": "nodemon --exec babel-node --inspect \"./index.js\""
   },
   "author": "Mustafa Mohamed",
   "license": "ISC",
