@@ -10,17 +10,12 @@ To install & run Backend API:
 navigate './todos-api'
 ```
 
-Prerequisite - Must be installed if you're not using a Docker: 
+Prerequisite - Must be installed: 
 - MongoDB 
 - Node
 
 ## Available Scripts
 In the project directory, you can run:
-
-If you are using a Docker Container, run the command below:
->docker-compose up
-
-If you are installing a locally, run the command below:
 
 >npm start
 
