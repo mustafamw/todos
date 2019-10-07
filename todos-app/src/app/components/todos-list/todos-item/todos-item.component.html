@@ -1,6 +1,6 @@
-<li class="td-todos-item" [ngClass]="{'completed': todos.completed}">
+<li class="td-todos-item" [ngClass]="{'completed': todos.completed}" (click)="complete()">
   <div class="td-display-flex">
-    <div class="checkbox" (click)="complete()">
+    <div class="checkbox">
       <div class="circle">
       </div>
     </div>

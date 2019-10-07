@@ -8,6 +8,7 @@ li.td-todos-item{
     padding-bottom: 15px;
     border: 1px solid $GREY-A;
     background: $GREY-B;
+    cursor: pointer;
     
     &.completed{
         .checkbox{
@@ -28,22 +29,10 @@ li.td-todos-item{
                 }
             }
         }
-        .checkbox:hover {
-            .circle {
-                opacity: 0.2;
-                background: $TODOS-UNCOMPLETED;
-            }
-            .circle::before {
-                content: "";
-            }
-        }
-        .subject{
-            text-decoration: line-through;
-        }
+        
     }
     
     .checkbox{
-        cursor: pointer;
         border: none;
         margin-right: 5px;
         border: none;
@@ -57,26 +46,6 @@ li.td-todos-item{
             @include respond-to(xs) {
                 height: 10px;
                 width: 10px;
-            }
-        }
-    }
-
-    .checkbox:hover {
-        .circle {
-            opacity: 0.2;
-            background: $TODOS-COMPLETED;
-        }
-        .circle::before {
-            position: relative;
-            top: -1px;
-            left: 2px;
-            font-family: FontAwesome;
-            content: "\f00c";
-            color: white;
-            font-size: 15px;
-            @include respond-to(xs) {
-                font-size: 7px;
-                top: -7px;
             }
         }
     }

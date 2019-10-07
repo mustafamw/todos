@@ -11,7 +11,7 @@ import { MessageResponse } from 'src/app/interfaces/messageResponse';
 
 export class TodosService {
 
-  private api = `${environment.api.domain}${environment.api.path}/create`;
+  private api = `${environment.api.domain}${environment.api.path}/todos`;
   public todos: Observable<Array<Todos>>;
 
   constructor(private readonly http: HttpClient) {
