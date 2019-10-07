@@ -72,3 +72,6 @@ https://github.com/webmanic/todos
 Live Link:
 http://hushtech.co.uk/api-docs/#/
 
+API Swagger:
+http://hushtech.co.uk:3000/api-docs/
+
