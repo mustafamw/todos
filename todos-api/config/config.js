@@ -26,19 +26,6 @@ const configs = {
         'swagger': {
             'path': '/api-docs'
         }
-    },
-    'docker': {
-        'application': {
-            'name': 'todos',
-            'domain': 'localhost',
-            'port': 3000
-        },
-        'mongodb': {
-            'url': 'mongodb://mongo:27017/todos'
-        },
-        'swagger': {
-            'path': '/api-docs'
-        }
     }
 };
 
